@@ -27,6 +27,52 @@
     padding: 0;
 }
 
+.grid_wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
 .container{
-    
+    width: 100%;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.card{
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.card1{
+    grid-column: 3 / span 2;
+    grid-row: 2/3;
+}
+.card2{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.card3{
+    grid-column: 6/7;
+    grid-row: 2 / span 2;
+}
+
+.card4{
+    grid-column: 4 / span 2;
+    grid-row: 3/4;
+}
+.card5{
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
